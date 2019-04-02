@@ -1,0 +1,21 @@
+1. I have used iris dataset from sklearn module to train this model.
+2. You will find separate methods for each operation and at last they all combined in train model method to form a multi-layer perceptron.
+3. Model created is dynamic and in notebook you will find a block with comment in top as “ this block is used as config file “ you can edit no of layers and no of nodes in each hidden layer and output layer to change model  according to you .
+Model config  :  Input shape  = 4, nodes_in_hidden = 5 , output_layer = 3
+4. Load data method will load the data into X (input) and Y (output). Y is in one-hot representation of output value, each row in X and Y represents one data point.
+5. weight_initi method will initialize weight and biases and store them in a dictionary for later use in feedforward and update methods.
+
+6. feed_forward just propagates the input through layers and finally generates the output according to model.
+
+7. update_weights methods uses backpropagation to propagates  error in output of model  back to layers and updates the weights and biases accordingly using gradient descent .
+
+8.Calculate_Acc method count the correct prediction and accuracy of model .
+
+9. I have tested all methods after declaration and at end used them to form 
+train_model method .
+
+10.Some non-linearity functions and their derivative function is also defined .
+11. I have not defined test function yet but it will be similar to feedforward .
+
+12. Due to small size of data I have not used batches. 
+
